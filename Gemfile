@@ -6,3 +6,4 @@ gem 'rack'
 gem 'puma'
 gem 'json'
 gem "rackup", "~> 2.1"
+gem "mongo"
