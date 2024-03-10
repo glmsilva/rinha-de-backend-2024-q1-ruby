@@ -3,7 +3,8 @@
 source "https://rubygems.org"
 
 gem 'rack'
-gem 'puma'
 gem 'json'
-gem "rackup", "~> 2.1"
 gem "mongo"
+gem 'bson'
+gem 'puma'
+gem 'rackup'

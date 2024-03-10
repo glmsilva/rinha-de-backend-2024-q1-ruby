@@ -5,9 +5,7 @@ GEM
     json (2.7.1)
     mongo (2.19.3)
       bson (>= 4.14.1, < 5.0.0)
-    nio4r (2.7.0)
-    puma (6.4.2)
-      nio4r (~> 2.0)
+    puma (3.7.1)
     rack (3.0.9.1)
     rackup (2.1.0)
       rack (>= 3)
@@ -19,11 +17,12 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  bson
   json
   mongo
   puma
   rack
-  rackup (~> 2.1)
+  rackup
 
 BUNDLED WITH
    2.5.4

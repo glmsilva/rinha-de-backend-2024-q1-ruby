@@ -6,7 +6,7 @@ services:
       context: ./
       dockerfile: Dockerfile
     ports:
-      - 3001:3000
+      - 4001:3000
     depends_on:
       - db
     deploy:
@@ -20,7 +20,7 @@ services:
       context: ./
       dockerfile: Dockerfile
     ports:
-      - 3002:3000
+      - 4002:3000
     depends_on:
       - db
     deploy:
@@ -36,6 +36,8 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: senhasecreta
     ports: 
       - 27017:27017
+    volumes:
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
 
   nginx:
     image: nginx:latest
